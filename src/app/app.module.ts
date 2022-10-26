@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import {HttpClientModule} from '@angular/common/http';
-import { RecipeComponent } from './recipe/recipe.component'
+import { RecipeComponent } from './recipe/recipe.component';
+import { NavbarComponent } from './navbar/navbar.component'
 
 const appRoutes:Routes=[
   {
@@ -27,7 +28,8 @@ const appRoutes:Routes=[
     AppComponent,
     SigninComponent,
     SignupComponent,
-    RecipeComponent
+    RecipeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
