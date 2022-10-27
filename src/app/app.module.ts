@@ -9,7 +9,8 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import {HttpClientModule} from '@angular/common/http';
 import { RecipeComponent } from './recipe/recipe.component';
-import { NavbarComponent } from './navbar/navbar.component'
+import { NavbarComponent } from './navbar/navbar.component';
+import { ViewmyRecipeComponent } from './viewmy-recipe/viewmy-recipe.component'
 
 const appRoutes:Routes=[
   {
@@ -21,6 +22,9 @@ const appRoutes:Routes=[
   },
   {
     path:"recipe",component:RecipeComponent
+  },
+  {
+    path:"view",component:ViewmyRecipeComponent
   }
 ]
 @NgModule({
@@ -29,7 +33,8 @@ const appRoutes:Routes=[
     SigninComponent,
     SignupComponent,
     RecipeComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewmyRecipeComponent
   ],
   imports: [
     BrowserModule,

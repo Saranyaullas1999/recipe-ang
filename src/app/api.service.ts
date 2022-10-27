@@ -23,4 +23,8 @@ export class ApiService {
   viewRecipe=()=>{
     return this.http.get("http://localhost:8080/viewall")
   }
+
+  viewSingle=(data:any)=>{
+    return this.http.post("http://localhost:8080/viewSingle",data)
+  }
 }
